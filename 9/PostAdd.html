@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная №9</title>
+    <link rel="stylesheet" href="css/Post.css">
+</head>
+<body>
+      
+  <header>
+      <img src="image/logo.PNG" style="margin-left: 2%;">
+      <div class="header-right-part"  >
+              <ref class="login-ref" style="margin-top: 5px;" >
+                  <img src="image/person.PNG" >
+                  <span  style="margin-right: 25px; margin-left: 15px;">@User</span>
+              </ref>
+
+          <button class="new-post-btn" >Новая запись</button>
+          <ref class="out-ref" >Выйти</ref>
+      </div>
+  </header>
+
+      <main class="main">
+        <div class="main-content">
+          <h1>Добавить запись</h1>
+          <form action="" method="post">
+            <div class="form-content">
+              <div class="form-content-head">
+                <label for="">Заголовок</label>
+                <input maxlength="255" type="text">
+              </div>
+              <div class="form-content-text">
+                <label for="text">Текст</label>
+                <textarea name="text" id="text">
+                </textarea>
+              </div>
+              <div class="form-content-select">
+                <label for="category">Выберите категорию</label>
+                <select name="category" id="category">
+                  <option value="0">без категории</option>
+                  <option value="1">Первая</option>
+                  <option value="2">Вторая</option>
+                  <option value="3">Третья</option>
+                </select>
+              </div>
+              
+              <div class="input-file">
+                <input id="file" class="hide" type="file" multiple accept="image/*">
+                <label class="adde" for="file">
+                  <span class="screpka">
+                    <img class="" src="image/Cool.svg" alt="Выбрать файл">
+                </span>
+                <span id="text_for_load">Прикрепить файл изображения</span>
+                <span id="file_weight" class="size_of_file"></span>
+                <progress id="completeBar" class="progressbar" min="0" max="100"></progress>
+            </label>
+            <img id="imgLoad" class="downloadImg hide" src="" alt="Нет изображения">
+          </div>
+              <div class="button">
+                <button type="submit">Опубликовать</button>
+              </div>
+          </form>
+        </div>
+      </main>
+
+
+    <footer class="footer">
+        <div class="footer-main">
+          <div class="footer-main-content">
+            <div class="footer-main-content-nav">
+              <a href="">Об авторе</a>
+              <a href="">Технологии</a>
+            </div>
+            <div class="footer-main-content-label">
+              <label for="">© blog, 2022</label>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+    <script src="Post.js"></script>
+</body>
+</html>

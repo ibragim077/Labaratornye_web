@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(99,77,145);
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-right-part{
+    color: rgb(255,255,255);
+    font-family: "Golos UI";
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.new-post-btn{
+    background-color: white;
+    border-radius: 7px;
+    border-style: none;
+    margin-top: 10px;
+    height:35px;
+    width:150px;
+    font-size: 15px;
+    color: rgb(82,56,140);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times;
+    font-weight: 900;
+    font-size:1em;  
+}
+.new-post-btn:hover{
+    background-color: rgb(69, 48, 116);
+    color:  rgb(255, 255, 255);
+}
+.new-post-btn:active{
+    background-color: rgb(49, 33, 87);
+    color:  rgb(255, 255, 255);
+}
+.out-ref{
+    color: rgb(255, 255, 255);
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-top: 5px; 
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times;
+    font-weight: 900;
+    font-size:1em;  
+}
+.out-ref:hover{
+    color: rgb(69, 48, 116);
+}
+.out-ref:active{
+    color: rgb(49, 33, 87);
+}
+.login-ref{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times;
+    font-weight: 900;
+    font-size:1em;  
+}
+/*----------------------------------------------------------------*/
+.main-content{
+    position: relative;
+    margin: auto 100px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times;
+    font-weight: 900;
+    font-size:4em;  
+    text-decoration:none;
+}
+
+form{
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form-content{
+    padding: 60px 50px;
+    height: max-content;
+    margin-left: 5px;
+}
+
+.form-content-head, .form-content-text, .form-content-select, .input-file{
+    margin: 20px 0;
+}
+
+.form-content-head input, .form-content-text textarea, .form-content-select select{
+    margin-top: 5px;
+    border-color: lightslategray;
+}
+
+.form-content-head label, .form-content-text label, .form-content-select label{
+    color: rgb(94, 126, 158);
+    margin-left: 20px;
+    font-weight: 900;
+    font-size:1em;  
+    text-decoration:none;
+}
+
+.form-content-head, .form-content-text, .form-content-select{
+    min-width: 100%;
+}
+
+.form-content-head input{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid lightslategray;
+}
+
+.form-content-text label{
+    display: block;
+}
+
+.form-content-text textarea{
+    font-size: 20px;
+    resize: none;
+    min-height: 200px;
+    overflow: auto;
+    width: 100%;
+    border: 1px solid lightslategray;
+    border-radius: 20px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.form-content-select select{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid lightslategray;
+    background-color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.input-file input{
+    width: 30%;
+    height: 60px;
+
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.input-file label{
+    display: inline-flex;
+    width: 30%;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid blueviolet;
+    font-size: 20px;
+}
+
+.input-file span{
+    margin: auto auto;
+    color: blueviolet;
+}
+
+.screpka{
+    float: left;
+    margin-right: 8px;
+}
+
+.select-box i{
+    position:absolute;
+    right: 100px;
+}
+.downloadImg {
+    margin-left: 30px;
+
+    width: 70px;
+    height: 70px;
+}
+
+.progressbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    border: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.gotoviuploadborder {
+    border-color: #005F17;
+}
+
+.gotoviuploadp {
+    color: #005F17;
+}
+
+
+.button *{
+    background-color: blueviolet;
+    color: white;
+    width: 15%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(238, 234, 234);
+}
+
+.footer-main{
+    position: relative;
+    margin: auto 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-main-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-main-content-nav a{
+    margin-right: 50px;
+    text-decoration:none;
+    font-family: 'Times New Roman', Times;
+    font-weight: 900;
+    font-size:1em; 
+    margin-left: 40px;
+}
+
+.footer-main-content-label{
+    margin-left: auto;
+    color: rgb(84, 84, 84);
+}

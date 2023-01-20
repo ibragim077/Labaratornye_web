@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../fount.css">
+    <title>Post add</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/img/BlogLogo.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#" class="link-first">
+                <img src="/img/Profile.png" alt="">
+                Войти
+            </a>
+            <a href="#" class="link-second">Зарегистрироваться</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Добавить запись</h1>
+        <form action="" method="post">
+            <div class="l1">
+                <label for="titel">Заголовок</label>
+                <input type="text" id="titel" maxlength="255">
+            </div>
+            <div class="l2">
+                <label for="textar">Текст</label>
+                <textarea id="textar"></textarea>
+            </div>
+            <div class="l3">
+                <label for="sect">Выберите категорию</label>
+                <select name="" id="sect">
+                    <option value="1">Первый</option>
+                    <option value="2">Второй</option>
+                </select>
+            </div>
+            <div class="l4">
+                <input type="file" multiple accept="image/*">
+                <span class="add_img"><img src="../img/paperclip.png">Прикрепить файл изображения</span>
+                
+            </div>
+            <div class="l5">
+                <button class="btn-submit" type="submit">Опубликовать</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="links-footer">
+            <a href="#" class="link-foot-first">Об авторе</a>
+            <a href="#" class="link-foot-second">Технологии</a>
+        </div>
+        <div class="log-foot">
+            © Blog, 2022
+        </div>
+    </div>
+</body>
+</html>

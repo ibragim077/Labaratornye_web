@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./fount/fount.css">
+    <title>6</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/img/BlogLogo.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#" class="link-first">
+                <img src="/img/Profile.png" alt="">
+                Войти
+            </a>
+            <a href="#" class="link-second">Зарегистрироваться</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="modal-base" id="modal-base">
+            <div class="modal-window" id="modal-window">
+                <div class="modal-drag">
+                <div class="modar-header" id="modar-header">
+                    <p>Вход</p>
+                    
+                    </div>
+                        <img id="close" src="./img/Close Icon.png">
+                </div>
+                <div class="modal-main">
+                    <form action="" method="post">
+                        <div class="login">
+                            <label for="login">Логин</label>
+                            <input type="text" id="login">
+                        </div>
+                        <div class="password">
+                            <label for="pass">Пароль</label>
+                            <input type="password" id="pass">
+                        </div>
+                        <span class="modal-btn">
+                            <button class="first-btn" type="submit">Войти</button>
+                            <button class="last-btn">Забыли пароль?</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="left-main">
+            <h1>Последние публикации</h1>
+            <div class="main-catalog">
+                <div class="row1">
+                    <div class="iteam">
+                        <img src="./img/image 1.png" alt="">
+                        <div class="info">
+                            <div class="name">
+                                Работа с Git в Visual Studio Code
+                            </div>
+                            <div class="info2">
+                                Один из способов работы с Гитом.
+                            </div>
+                            <div class="categorys">
+                                <div class="tile">Git</div>
+                                <div class="tile">Консоль</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iteam">
+                        <img src="./img/image 2.png" alt="">
+                        <div class="info">
+                            <div class="name">
+                                Adobe покупают Фигму. Всё пропало?
+                            </div>
+                            <div class="info2">
+                                Не факт, но есть разные мнения.
+                            </div>
+                            <div class="categorys">
+                                <div class="tile">Figma</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="iteam">
+                        <img src="./img/image 3.png" alt="">
+                        <div class="info">
+                            <div class="name">
+                                Все научились программировать. А дальше-то что?
+                            </div>
+                            <div class="info2">
+                                Ученье — свет.
+                            </div>
+                            <div class="categorys">
+                                <div class="tile">Обучение</div>
+                                <div class="tile">Карьера</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iteam">
+                        <img src="./img/image 4.png" alt="">
+                        <div class="info">
+                            <div class="name">
+                                Мне тяжело учиться, кто поможет?
+                            </div>
+                            <div class="info2">
+                                Попали в патовую ситуацию? Тогда кликайте на статью.
+                            </div>
+                            <div class="categorys">
+                                <div class="tile">Обучение</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="iteam">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="info">
+                            <div class="name">
+                                Ключевые навыки фронтендеров в 2022
+                            </div>
+                            <div class="info2">
+                                Ежегодное исследование рынка от HTML Academy.
+                            </div>
+                            <div class="categorys">
+                                <div class="tile">Обучение</div>
+                                <div class="tile">Карьера</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iteam">
+                        <img src="./img/image 6.png" alt="">
+                        <div class="info">
+                            <div class="name">
+                                Фронтенд-новости
+                            </div>
+                            <div class="info2">
+                                WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.
+                            </div>
+                            <div class="categorys">
+                                <div class="tile">Новости</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="more-6">Загрузить ещё 6</button>
+            </div>
+        </div>
+        <div class="right-main">
+           <h3>Рубрики</h3>
+           <div class="link-category">
+                <a href="#" class="category">Обучение</a>
+                <a href="#" class="category">Карьера</a>
+                <a href="#" class="category">Figma</a>
+                <a href="#" class="category">Консоль</a>
+                <a href="#" class="category">Git</a>
+                <a href="#" class="category">Новости</a>
+           </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="links-footer">
+            <a href="#" class="link-foot-first">Об авторе</a>
+            <a href="#" class="link-foot-second">Технологии</a>
+        </div>
+        <div class="log-foot">
+            © Blog, 2022
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

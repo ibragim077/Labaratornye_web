@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Golos Text';
+    src: local('Golos Text Demi Bold'), local('Golos-Text-Demi-Bold'),
+        url('GolosText-DemiBold.woff2') format('woff2'),
+        url('GolosText-DemiBold.woff') format('woff'),
+        url('GolosText-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }

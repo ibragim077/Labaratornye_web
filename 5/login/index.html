@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../fount.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/img/BlogLogo.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#" class="link-first">
+                <img src="/img/Profile.png" alt="">
+                Войти
+            </a>
+            <a href="#" class="link-second">Зарегистрироваться</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Регистрация</h1>
+        <form action="" method="post">
+            <div class="l1">
+                <div class="name">
+                    <label for="first-name">Имя</label>
+                    <input type="text" id="first-name" minlength="2" >
+                </div>
+                <div class="second-name">
+                    <label for="last-name">Фамилия</label>
+                    <input type="text" id="last-name" minlength="2">
+                </div>
+            </div>
+            <div class="l2">
+                <div class="login-check">
+                    <label for="login">Логин *</label>
+                    <input type="text" id="login" maxlength="150" pattern="/[a-zA-Z@+-_]+/" required value="user">
+                    <span class="mistake-login">
+                        <span class="true"><img id="img" src="../img/State Icons.png" alt=""> Толлько буквы, цифры и символы @.+-_</span>
+                        <span class="true"><img id="img" src="../img/State Icons.png" alt=""> Не более 150 символов</span>
+                    </span>
+                </div>
+                <div class="email-check">
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" maxlength="255" pattern="[^|\w](\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)">
+                </div>
+            </div>
+            <div class="l3">
+                <div class="password-check">
+                    <label for="ps1">Пароль *</label>
+                    <input type="password" id="ps1" required value="Primer123">
+                    <span class="mistake-pass">
+                        <span class="true"><img id="img" src="../img/State Icons.png" alt=""> Минимум 8 символов</span>
+                        <span class="true"><img id="img" src="../img/State Icons.png" alt=""> Не состоит только из цифр</span>
+                        <span class="true"><img src="../img/State Icons.png" alt=""> Не должен совпадать с логином</span>
+                    </span>
+                </div>
+                <div class="password-check2">
+                    <label for="ps2">Подтверждение пароля</label>
+                    <input class="red" type="password" id="ps2" required value="Лапочкин Сергей">
+                    <span class="mistake-pass2">
+                        <span class="false"><img id="img" src="../img/State.png" alt=""> Пароли не совпадают </span>
+                    </span>
+                </div>
+            </div>
+            <div class="l4">
+                <input type="checkbox" id="check" checked>
+                <label for="check">Даю своё согласие на обработку персональных данных</label>
+            </div>
+            <div class="l5">
+                <button class="btn-submit" type="submit">Опубликовать</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="links-footer">
+            <a href="#" class="link-foot-first">Об авторе</a>
+            <a href="#" class="link-foot-second">Технологии</a>
+        </div>
+        <div class="log-foot">
+            © Blog, 2022
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

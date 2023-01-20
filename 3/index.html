@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>3</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logotip">ЛОГО</div>
+        <div class="header-link">
+            <a href="" class="link-first">Содержимое</a>
+            <a href="#" class="link-second">Сайт</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Каталог лабораторной №3</h1>
+        <div class="main-catalog" id="catalog">
+            <div class="iteam">
+                <img src="./image/1.png">
+                <div class="titel">ДЗУППА ДИ ПОЛО</div>
+                <div class="sell">
+                    <div class="cost">500</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="iteam">
+                <img src="./image/2.png">
+                <div class="titel">БУРРАТА</div>
+                <div class="sell">
+                    <div class="cost">400</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="iteam">
+                <img src="./image/3.png">
+                <div class="titel">ТОРТЕЛЛИНИ ПАННА Э ПРОШУТТО</div>
+                <div class="sell">
+                    <div class="cost">220</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="iteam">
+                <img src="./image/4.png">
+                <div class="titel">ЛАЗАНЬЯ АЛЛА БОЛОНЬЕЗЕ</div>
+                <div class="sell">
+                    <div class="cost">380</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="iteam">
+                <img src="./image/5.png">
+                <div class="titel">ЧЕСТИНО ДИ ФРАГОЛЕ</div>
+                <div class="sell">
+                    <div class="cost">350</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="iteam">
+                <img src="./image/6.png">
+                <div class="titel">ПАНКЕЙК КОН КРЕМА ШАНТИЛЬИ Э ПЕСКЕ ШИРОПАТЕ</div>
+                <div class="sell">
+                    <div class="cost">180</div><div class="rub">₽</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="main-catalog-btn">Цвет</button>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelector('.main-catalog-btn');
+        let iteam = document.querySelectorAll(".iteam");
+        let yakor = document.querySelector(".link-first")
+
+        yakor.href = "#catalog";
+
+        button.onclick = function(){
+            console.log("Privet")
+           for(let i = 0; i<iteam.length; i++){
+            if(i % 2 != 0){
+                iteam[i].classList.toggle("bg-iteam");
+            }
+        }  
+        }
+       
+    </script>    
+</body>
+</html>
